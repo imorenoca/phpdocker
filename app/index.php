@@ -1,7 +1,5 @@
 <?php
 require_once __DIR__ . '/config/conexiondb.php';
-require_once __DIR__ . '/config/variablesentorno.php';
-
 // Crear una instancia de la clase de conexión
 $db = new ConexionDB();
 
@@ -26,7 +24,7 @@ $db->closeConnection();
         <!-- Primer apartado -->
         <div class="row">
             <div class="col-md-8 mx-auto text-center">
-                <h1>Bienvenid@ a cvWeb</h1>
+                <h1>Bienvenid@</h1>
                 <p><?php echo $dbStatus; ?></p>
             </div>
         </div>

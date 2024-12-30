@@ -1,11 +1,11 @@
 -- Crear base de datos
-CREATE DATABASE test_db;
+CREATE DATABASE IF NOT EXISTS test_db;
 
 -- Usar la base de datos
 USE test_db;
 
 -- Crear tabla de usuarios
-CREATE TABLE usuarios (
+CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     correo VARCHAR(150) NOT NULL UNIQUE,
